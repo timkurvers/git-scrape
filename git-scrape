@@ -6,10 +6,15 @@ target=$1
 find $target -name .git -type d | while read filename
 do
   flags="--git-dir=$filename --work-tree=${filename:h}"
+  ahead=$(git ${=flags} status | grep '^Your branch is ahead')
   dirty=$(git ${=flags} status --short | sed 's/^/  /')
 
-  if [[ -n $dirty ]]; then
+  if [[ -n $dirty || -n $ahead ]]; then
     echo ${filename:h}
+
+    if [[ -n $ahead ]]; then
+      echo "  \e[36;1m$ahead\e[0m"
+    fi
 
     if [[ -n $dirty ]]; then
       echo "\e[30;1m$dirty\e[0m"
