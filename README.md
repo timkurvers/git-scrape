@@ -5,6 +5,8 @@ Scrapes local git repos and reports on their current state:
 - Dirty working directory (soon)
 - Changes to be pushed to origin (soon)
 
+Licensed under the **MIT** license, see LICENSE for more information.
+
 
 ## Installation
 
