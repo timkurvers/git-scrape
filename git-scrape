@@ -1,0 +1,20 @@
+#!/usr/bin/env zsh
+
+target=$1
+: ${target:=.}
+
+find $target -name .git -type d | while read filename
+do
+  flags="--git-dir=$filename --work-tree=${filename:h}"
+  dirty=$(git ${=flags} status --short | sed 's/^/  /')
+
+  if [[ -n $dirty ]]; then
+    echo ${filename:h}
+
+    if [[ -n $dirty ]]; then
+      echo "\e[30;1m$dirty\e[0m"
+    fi
+  fi
+done
+
+return 0
