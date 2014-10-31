@@ -7,6 +7,8 @@ Scrapes local git repos and reports on their current state:
 
 Licensed under the **MIT** license, see LICENSE for more information.
 
+![git-scrape](http://office.moonsphere.net/git-scrape.png)
+
 
 ## Installation
 
