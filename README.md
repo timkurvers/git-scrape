@@ -1,9 +1,9 @@
 # git scrape
 
-Scrapes local git repos and reports on their current state:
+Scrapes local git repos and reports:
 
-- Dirty working directory (soon)
-- Changes to be pushed to origin (soon)
+- Untracked, modified, deleted files and their staging state
+- Whether changes should be pushed to a remote tracking branch
 
 Licensed under the **MIT** license, see LICENSE for more information.
 
