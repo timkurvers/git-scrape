@@ -9,20 +9,24 @@ Licensed under the **MIT** license, see LICENSE for more information.
 
 ![git-scrape](http://office.moonsphere.net/git-scrape.png)
 
-
 ## Installation
 
 Add as a bundle through [Antigen](https://github.com/zsh-users/antigen):
 
-    antigen bundle timkurvers/git-scrape
-
+```shell
+antigen bundle timkurvers/git-scrape
+```
 
 ## Usage
 
 Defaults to current working directory:
 
-    git scrape
+```shell
+git scrape
+```
 
 Or may be given a directory to search under:
 
-    git scrape ~/repos
+```shell
+git scrape ~/repos
+```
