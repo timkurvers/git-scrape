@@ -11,7 +11,7 @@ Licensed under the **MIT** license, see LICENSE for more information.
 
 ## Installation
 
-Add as a bundle through [Antigen](https://github.com/zsh-users/antigen):
+Add as a bundle through [Antigen]:
 
 ```shell
 antigen bundle timkurvers/git-scrape
@@ -30,3 +30,5 @@ Or may be given a directory to search under:
 ```shell
 git scrape ~/repos
 ```
+
+[Antigen]: https://github.com/zsh-users/antigen
