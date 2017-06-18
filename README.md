@@ -7,7 +7,7 @@ Scrapes local git repos and reports:
 
 Licensed under the **MIT** license, see LICENSE for more information.
 
-![git-scrape](http://office.moonsphere.net/git-scrape.png)
+![git-scrape](https://user-images.githubusercontent.com/378235/27263692-0f7c732c-546f-11e7-8aaa-25937d46f50e.png)
 
 ## Installation
 
