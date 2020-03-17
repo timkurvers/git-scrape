@@ -1,11 +1,11 @@
 # git scrape
 
+[![MIT License](https://badgen.net/github/license/timkurvers/git-scrape)](LICENSE.md)
+
 Scrapes local git repos and reports:
 
 - Untracked, modified, deleted files and their staging state
 - Whether changes should be pushed to a remote tracking branch
-
-Licensed under the **MIT** license, see LICENSE for more information.
 
 ![git-scrape](https://user-images.githubusercontent.com/378235/27263692-0f7c732c-546f-11e7-8aaa-25937d46f50e.png)
 
