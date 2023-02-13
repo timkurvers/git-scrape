@@ -31,4 +31,10 @@ Or may be given a directory to search under:
 git scrape ~/repos
 ```
 
+Pass through additional flags to `git status` as the second positional argument:
+
+```shell
+git scrape . --ignored
+```
+
 [Antigen]: https://github.com/zsh-users/antigen

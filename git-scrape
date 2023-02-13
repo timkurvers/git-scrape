@@ -3,11 +3,13 @@
 target=$1
 : ${target:=.}
 
+statusflags=$2
+
 find $target -name .git -type d | while read filename
 do
   flags="--git-dir=$filename --work-tree=${filename:h}"
   ahead=$(git ${=flags} status | grep '^Your branch is ahead')
-  dirty=$(git ${=flags} status --short | sed 's/^/  /')
+  dirty=$(git ${=flags} status --short $statusflags | sed 's/^/  /')
 
   if [[ -n $dirty || -n $ahead ]]; then
     echo ${filename:h}
